@@ -1,0 +1,6 @@
+Projeto de intercambio 
+
+Problemas:
+* Acessibilidade ao intercambio;
+* Custo alto;
+*
