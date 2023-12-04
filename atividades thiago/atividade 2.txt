@@ -1,0 +1,38 @@
+const leitor = require("readline-sync")
+// Exercicios 1 
+//Letra A
+let Meunome;
+//Letra B 
+let Idade; 
+// Letra C
+console.log(typeof Meunome);
+console.log (typeof idade);
+//Letra D : o tipo undefined foi impresso por que nao havia um valor estipulado para as variaveis em questao;
+//Letra E:
+Meunome = leitor.question("Qual seu nome?:")
+idade = leitor. questionInt("Qual sua idade?:")
+//Letra F: o tipo das variaveeis foi impresso pois agora foi definidoseu valor.
+console.log (typeof Meunome);
+console.log (typeof idade);
+//Letra G
+console.log("Ola",Meunome, "Voce tem ", idade, "anos!");
+//Exercicio 2
+let I = leitor.question("Voce vai sair hoje?")
+let II = leitor.question("Vai demorar?")
+let III = leitor.question("Voce gosta de pizza?")
+console.log("1:",I,"2",II,"3",III);
+
+
+//Exercicios 3
+let a = 12
+let b = 19
+let c = 0
+console.log("a=",a,"b=",b,"c=",c,)
+c = a;
+a = b;
+b = c;
+c = c-b;
+console.log("a=",a,"b=",b,"c=",c)
+
+console.log("O novo valor de a é", a) // O novo valor de a é 25
+console.log("O novo valor de b é", b) // O novo valor de b é 10

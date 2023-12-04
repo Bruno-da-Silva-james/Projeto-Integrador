@@ -1,0 +1,24 @@
+const leitor = require('readline-sync')
+//EXERCICIO 1
+let num1 = leitor.questionInt("Ensira um numero: ")
+let num2 = leitor.questionInt("Ensira outro numero: ")
+console.log("Soma da adicao: ", num1 + num2);
+
+//exercicio 2
+num1 = leitor.questionInt("Ensira um numero: ")
+nun2 = leitor.questionInt("Ensira outro numero: ")
+console.log("Soma da multiplicacao: ", num1 * num2);
+div = leitor.questionInt("Ensira um numero para ser dividido: ")
+console.log("Multiplicacao e divisao: ", num1 * num2 / div);
+
+//exercicio 3
+n1 = leitor.questionInt("Ensira um numero: ")
+n2 = leitor.questionInt("Ensira outro: ")
+console.log("O resultado da subtracao: ", num1 - num2);
+multi = leitor.questionInt("Ensira um numero para multiplicar: ")
+console.log("Subtracao e multiplicacao: ", (num1 - num2) * multi);
+
+//exercicio 4
+n1 = leitor.questionInt("Ensira um numero: ")
+div = leitor.questionInt("Ensira um numero para ser dividido: ")
+console.log("Resto da divisao: ", num1 %div);

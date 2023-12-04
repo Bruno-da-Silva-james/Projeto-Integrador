@@ -1,0 +1,82 @@
+//1)
+/*function frases(){
+    console.log("Use the val keyword when the value doesn't change.");
+    console.log("Use the var keyword when the value can change.");
+    console.log("When you define a function, you define the parameters that can be passed to it.");
+    console.log("When you call a function, you pass arguments for the parameters.");
+}
+frases()
+
+//2)
+function main(){
+    let iten = "camisa"
+    let valor = 80
+    let desconto = 0.75
+    console.log(`O meu ${iten} custa ${valor}R$ e tem desconto de ${valor*desconto}%`)
+}
+main()
+
+//3)
+function main(){
+    let adultos = 10 ;
+    let crianças = 8 ;
+    console.log(`somando os adultos que sao ${adultos} e as crianças que sao ${crianças} daria ${adultos + crianças} `)
+}
+pessFesta()
+
+//4)
+function main(){
+    let salario = 200000
+    let inss = 0.925
+    let irrf = 0.725
+    console.log(`O valor do salario e ${salario} e o desconto do INSS e ${inss} e o desconto do IRRS e de ${irrf} descontando ${inss*salario*irrf}  `)
+}
+main()
+
+//5)
+const leitor = require("readline-sync")
+const soma = (a, b) => a + b
+const sub = (a, b) => a - b
+const mult = (a, b) => a * b
+const div = (a, b) => a / b
+
+function main() {
+    let In = leitor.questionInt(" Digite um numero");
+    let Ter = leitor.questionInt("Insira outro numero");
+
+
+
+    console.log(`O resultado da soma dos numeros${In} e ${Ter} da ${ soma(In, Ter)} `)
+    console.log(`O resultado da subtraçao dos numeros${In} e ${Ter} da ${sub(In, Ter)} `)
+    console.log(`O resultado da multiplicaçao dos numeros${In} e ${Ter} da ${mult(In, Ter)} `)
+    console.log(`O resultado da divisao dos numeros${In} e ${Ter} da ${div(In, Ter)} `)
+}
+main()
+
+//6)
+function main(){
+    const n1 = "Thiago"
+    const n2 = "android"
+    console.log(displayAllertMessage(n1, n2))
+}
+function displayAllertMessage(n1, n2){
+   return` There's a new sign-in request on ${n1} for your Google Account ${n2}.`
+}
+
+main()
+
+//7)
+function timeSpent(){
+    if (hh > ho){
+        return true
+    }
+    return false
+}
+function main(){
+    let hh = 6
+    let ho = 12
+    console.log(timeSpent(hh, ho));
+
+}
+main()
+*/

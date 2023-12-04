@@ -1,0 +1,87 @@
+const leitor = require('readline-sync')
+
+  
+
+  let nomeProf = leitor.question("Qual o seu nome?");
+
+  let dicplina = leitor.question("Qual a diciplina?");
+ 
+  function main() {
+  let nomeAluno1 = leitor.question("Ensira nome do aluno 1");
+
+  let notaA = leitor.questionInt("Ensira primeira nota ")
+  let notaB = leitor.questionInt("Ensira a segunda nota ")
+  let notaC = leitor.questionInt("ensira a terceira nota")
+  let notaD = leitor.questionInt("ensira a quarta nota")
+  let notaE = leitor.questionInt("ensira a quinta nota")
+  let notaF = leitor.questionInt("ensira a sexta nota")
+  let somaa = (notaA + notaB + notaC + notaD + notaE + notaF )/6
+
+  if (somaa >= 7){
+    console.log( "Aprovado!");
+} else {
+    if (somaa < 7){
+        console.log("Reprovado!");
+    }
+  console.log(`As notas do 1 alunos que são ${notaA}, ${notaB}, ${notaC}, ${notaD}, ${notaE}, ${notaF} se fazer a media dara $${somaa / 6}`)
+ 
+  let nomeAluno2 = leitor.question("Ensira o nome do aluno 2 ")
+
+  let nota1 = leitor.questionInt("Ensira primeira nota ")
+  let nota2 = leitor.questionInt("Ensira a segunda nota ")
+  let nota3 = leitor.questionInt("ensira a terceira nota")
+  let nota4 = leitor.questionInt("ensira a quarta nota")
+  let nota5 = leitor.questionInt("ensira a quinta nota")
+  let nota6 = leitor.questionInt("ensira a sexta nota")
+  let soma = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6)/6
+  
+  if (soma >= 7){
+    console.log( "Aprovado!");
+} else {
+    if (soma < 7){
+        console.log("Reprovado!");
+    }
+  console.log(`As notas do alunos que são ${nota1},${nota2}, ${nota3},${nota4},${nota5},${nota6} se fazer a media dara ${soma / 6}`)
+
+  let nomeAluno3 = leitor.question("Ensira o nome do aluno 3 ")
+
+  let pts1 = leitor.questionInt("Ensira primeira nota ")
+  let pts2 = leitor.questionInt("Ensira a segunda nota ")
+  let pts3 = leitor.questionInt("ensira a terceira nota")
+  let pts4 = leitor.questionInt("ensira a quarta nota")
+  let pts5 = leitor.questionInt("ensira a quinta nota")
+  let pts6 = leitor.questionInt("ensira a sexta nota")
+  let somaaa = (pts1 + pts2 + pts3 + pts4 + pts5 + pts6)/6
+  
+  console.log(`As notas do alunos que são ${pts1},${pts2}, ${pts3},${pts4},${pts5},${pts6} se fazer a media dara ${somaaa / 6}`)
+  
+  if (soma >= 7){
+    console.log( "Aprovado!");
+} else {
+    if (soma < 7){
+        console.log("Reprovado!");
+    }
+
+  console.log(`A nota de ${aluno} e ${media}`)
+
+let a1 = [nomeAluno1, somaa , nomeAluno2 ,soma, nomeAluno3, somaaa]
+
+return a1
+}
+
+
+let nomeAluno1 = alunoTotal()
+let nomeAluno2 = alunoTotal()
+let nomeAluno3 = alunoTotal()
+
+let maiorNota = Math.max(nomeAluno1[1], nomeAluno2[1], nomeAluno3[1])
+
+console.log(nomeAluno1);
+console.log(nomeAluno2);
+console.log(nomeAluno3);
+console.log(`a maior nota e ${maiorNota}`);
+
+  
+}
+
+main()

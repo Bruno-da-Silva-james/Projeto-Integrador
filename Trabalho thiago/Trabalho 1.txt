@@ -1,0 +1,83 @@
+//letra A
+const leitor = require('readline-sync')
+
+let num = leitor.questionInt("Ensira um numero ")
+let num2 = leitor.questionInt("Ensira outro numero ")
+let soma = num + num2
+
+if (num > 0 && num2 > 0) {
+    console.log(soma);
+} else {
+    console.log("Invalido");
+}
+
+//letra B
+let num = leitor.questionInt("Ensira um numero ")
+let num2 = leitor.questionInt("Ensira outro numero ")
+let mult = num * num2
+
+if ((num % 2) == 0 && (num2 % 2) != 0 || (num % 2) != 0 && (num2 % 2) == 0) {
+    console.log(mult);
+} else {
+    console.log("Invalido");
+}
+//letra C
+let v1 = leitor.questionFloat("insira o valor a ser dividido: ") 
+let v2 = leitor.questionFloat("insira um divisor que não seja 0: ")
+
+if (v2 !== 0) {
+    console.log(v1/v2)
+} else {
+    console.log("divisor invalido, digite um numero que não seja 0");
+}
+//letra D
+let nums = [ 1, 2, 3, 4, 5, 6 ]
+
+console.log (nums.length)
+
+nums.splice ( 0,1 )
+nums.pop()
+console.log( nums )
+
+//letra E
+
+let string = leitor.question("digite um frase: ")
+let vogais = string.match(/[aeio u]/g)
+
+console.log(vogais)
+
+//letra F
+
+let a=leitor.question("Escreva uma frase: ")
+
+console.log ( a.match(/[^aeiou  ]/g) )
+
+//letra G
+
+function imprimeUltimoNumero(array) {
+    if (array.length >= 2) {
+      console.log(array[array.length - 1]);
+    } else {
+      console.log("O array deve ter pelo menos dois elementos.");
+    }
+  }
+  
+  imprimeUltimoNumero([1, 2, 3]);
+  
+  //trabalho G
+
+  function imprimePrimeiroNumeroPositivo(array) {
+    if (array.length < 1) {
+      console.log("O array deve ter pelo menos um elemento.");
+      return;
+    }
+  
+    if (array[0] > 0) {
+      console.log(array[0]);
+    } else {
+      console.log("O primeiro elemento do array deve ser maior que 0.");
+    }
+  }
+  
+  imprimePrimeiroNumeroPositivo([1, 2, 3]);
+  

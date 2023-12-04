@@ -1,0 +1,98 @@
+const leitor = require('readline-sync')
+//Exercicio 1
+//a
+function frase() {
+    console.log("Eu sou o Thiago, tenho 19 anos, moro em Sapucaia do Sul e sou estudante de desinvolvimento de sistemas");
+}
+
+frase()
+
+//b
+let nome = leitor.question('Ensira seu nome: ')
+let idade = leitor.questionInt('Ensira sua idade: ')
+let cidade = leitor.question('Ensira sua cidade: ')
+let prof = leitor.question('Ensira sua profissão: ')
+
+function fraseInp(nome, idade, cidade, prof) {
+
+    console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${prof}.`);
+
+}
+
+fraseInp(nome, idade, cidade, prof)
+
+//Exercicio 2
+
+let a = leitor.questionInt("Ensira um numero: ")
+let b = leitor.questionInt("Ensira outro numero: ")
+let frase = leitor.question("Escreva uma frase: ")
+function num(a, b) {
+    let soma = a + b
+    console.log(`A soma do numero ${a} com o numero ${b} é ${soma}`);
+}
+
+num(a, b)
+
+function bool(a, b) {
+
+    if (a > b) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+bool(a, b)
+
+function par(a) {
+    if ((a % 2) === 0) {
+        console.log(`O valor é par ${true}`);
+    } else {
+        console.log(`O valor é impar ${false}`);
+    }
+
+}
+par(a)
+
+function fraseLeng(frase) {
+    console.log("A frase tem ", frase.length, "letras");
+    console.log("Em maiusculo ", frase.toUpperCase());
+}
+
+fraseLeng(frase)
+
+//Exercicio 3
+
+let valorA = leitor.questionInt("Ensira um valor: ")
+let valorB = leitor.questionInt("Ensira outro valor: ")
+
+function soma(a, b) {
+    let som = a + b
+    console.log(som);
+}
+
+function sub(a, b) {
+    let su = a - b
+    console.log(su);
+}
+
+function mult(a, b) {
+    let mul = a * b
+    console.log(mul);
+}
+
+function div(a, b) {
+    let di = a / b
+    console.log(di);
+}
+
+function main() {
+    console.log(`Numero inseridos ${valorA} e ${valorB}`);
+    console.log("Soma: ", soma(valorA, valorB));
+    console.log("Subtracao: ", sub(valorA, valorB));
+    console.log("Multiplicacao: ", mult(valorA, valorB));
+    console.log("Divisao: ", div(valorA, valorB));
+}
+
+
+
+main()
